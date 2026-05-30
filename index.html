@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratty Entertainment | Official</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .btn-yt { display: inline-block; background: #ff0000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 10px; margin: 20px; font-weight: bold; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: #111; padding: 10px; border-radius: 10px; }
+        img { width: 100%; border-radius: 10px; }
+        .vid { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px; margin-top: 20px; background: #111; }
+        input, textarea { width: 100%; padding: 12px; margin: 5px 0; border-radius: 5px; border: none; box-sizing: border-box; }
+        button { background: #25d366; color: #fff; padding: 15px; border: none; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>RATTY ENTERTAINMENT</h1>
+    <a href="https://youtube.com/@comedianratty1?si=V9VU2n94kbfGBL7O" target="_blank" class="btn-yt">SUBSCRIBE ON YOUTUBE</a>
+
+    <h2>THE CREW</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://i.ibb.co/C3DjCw5f/IMG-20260529-WA0070.jpg" alt="Ratty">
+            <h3>Ratty</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/LhRQzPMt/IMG-20260529-WA0089.jpg" alt="She's Crazy">
+            <h3>She's Crazy</h3>
+            <p>Comedian</p>
+        </div>
+    </div>
+
+    <h2>LATEST VIDEOS</h2>
+    <iframe class="vid" src="https://streamable.com/e/1t8g7y"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/nvoaj9"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/m8wdqm"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/lxfa9e"></iframe>
+
+    <h2>BOOK US</h2>
+    <form id="f">
+        <input type="text" id="n" placeholder="Your Name" required>
+        <input type="text" id="t" placeholder="Event Type" required>
+        <textarea id="m" placeholder="Details" rows="4"></textarea>
+        <button type="submit">CHAT WITH MANAGEMENT</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('f').onsubmit = function(e) {
+        e.preventDefault();
+        const n = document.getElementById('n').value;
+        const t = document.getElementById('t').value;
+        const m = document.getElementById('m').value;
+        const msg = encodeURIComponent(`Booking request from ${n}. Event: ${t}. Details: ${m}`);
+        window.open(`https://wa.me/2348136045102?text=${msg}`);
+    };
+</script>
+</body>
+</html>
