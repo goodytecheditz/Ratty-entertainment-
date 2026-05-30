@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratty Entertainment | Official</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        h1 { margin-bottom: 5px; }
+        .bio-text { font-size: 1.4rem; color: #ff5e00; font-weight: bold; font-style: italic; margin-bottom: 25px; }
+        .btn-yt { display: inline-block; background: #ff0000; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 10px; margin: 20px; font-weight: bold; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: #111; padding: 10px; border-radius: 10px; }
+        img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
+        .vid { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px; margin-top: 20px; background: #111; }
+        .info-box { background: #111; padding: 25px; border-radius: 15px; margin: 30px auto; text-align: left; border-left: 5px solid #ff5e00; }
+        input, textarea { width: 100%; padding: 12px; margin: 5px 0; border-radius: 5px; border: none; box-sizing: border-box; }
+        button { background: #25d366; color: #fff; padding: 15px; border: none; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        .btn-support { background: #007bff; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>RATTY ENTERTAINMENT</h1>
+    <p class="bio-text">"Seriousness is the best"</p>
+    
+    <a href="https://youtube.com/@comedianratty1?si=V9VU2n94kbfGBL7O" target="_blank" class="btn-yt">SUBSCRIBE ON YOUTUBE</a>
+
+    <div class="info-box">
+        <h2 style="text-align: center; color: #ff5e00;">ABOUT US</h2>
+        <p><strong>Meet the CEO:</strong> Saviour Odey Agbor. His journey began at just 12 years old, sparked by a deep-rooted passion for storytelling. What started as a childhood dream has evolved into a powerhouse of creativity and viral comedy.</p>
+        <p style="margin-top: 15px;"><strong>Our Story:</strong> Officially established on <strong>3rd April 2026</strong>, Ratty Entertainment grew from a foundation of pure content creation. We spent years honing our craft before expanding our vision into film. We bridge the gap between everyday life and unfiltered joy.</p>
+    </div>
+
+    <h2>SUPPORT THE TEAM</h2>
+    <p>Support our journey by donating to the CEO's OPay account: <b>7072539979</b></p>
+    <a href="pay:7072539979" class="btn-yt btn-support" onclick="alert('Please copy this account number: 7072539979. Opening your banking app now...')">SUPPORT THE TEAM</a>
+
+    <h2>THE CREW</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://i.ibb.co/zTPMJpDn/IMG-20260529-WA0070.jpg" alt="Ratty">
+            <h3>Ratty</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/k2g8VvwJ/file-000000004db871fdb9db107f1656a8e2.png" alt="Goodnews">
+            <h3>Goodnews</h3>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/4gFpxnBw/file-00000000e560724389515f01b597ebf0.png" alt="Owoshop">
+            <h3>Owoshop</h3>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/NdDc9XmS/IMG-20260529-WA0089.jpg" alt="She's Crazy">
+            <h3>She's Crazy</h3>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/KcWZGR2Y/IMG-20260529-WA0091.jpg" alt="Bentem">
+            <h3>Bentem</h3>
+        </div>
+    </div>
+
+    <h2>LATEST VIDEOS</h2>
+    <iframe class="vid" src="https://streamable.com/e/1t8g7y"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/nvoaj9"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/m8wdqm"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/lxfa9e"></iframe>
+
+    <h2>BOOK US</h2>
+    <form id="f">
+        <input type="text" id="n" placeholder="Your Name" required>
+        <input type="text" id="t" placeholder="Event Type" required>
+        <textarea id="m" placeholder="Details" rows="4"></textarea>
+        <button type="submit">CHAT WITH MANAGEMENT</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('f').onsubmit = function(e) {
+        e.preventDefault();
+        const n = document.getElementById('n').value;
+        const t = document.getElementById('t').value;
+        const m = document.getElementById('m').value;
+        const msg = encodeURIComponent(`Booking request from ${n}. Event: ${t}. Details: ${m}`);
+        window.open(`https://wa.me/2348136045102?text=${msg}`);
+    };
+</script>
+</body>
+</html>
