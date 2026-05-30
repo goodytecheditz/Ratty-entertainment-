@@ -1,1 +1,103 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratty Entertainment | Official</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; margin: 0; padding: 0; }
+        /* Performance Optimization */
+        img, iframe { content-visibility: auto; contain-intrinsic-size: 200px; } 
+        
+        .navbar { position: sticky; top: 0; background: rgba(0,0,0,0.95); padding: 15px; display: flex; justify-content: center; gap: 15px; z-index: 1000; border-bottom: 2px solid #ff5e00; }
+        .navbar a { color: #fff; text-decoration: none; font-weight: bold; font-size: 0.8rem; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .logo { width: 120px; height: 120px; margin: 20px 0; border-radius: 50%; object-fit: cover; }
+        .bio-text { font-size: 1.2rem; color: #ff5e00; font-weight: bold; font-style: italic; margin-bottom: 20px; }
+        .btn { display: inline-block; padding: 12px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 5px; color: #fff; cursor: pointer; }
+        .btn-yt { background: #ff0000; }
+        .btn-support { background: #007bff; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-top: 20px; }
+        .card { background: #111; padding: 8px; border-radius: 8px; }
+        .card img { width: 100%; height: 140px; object-fit: cover; border-radius: 5px; display: block; }
+        .vid { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 8px; margin-top: 15px; background: #111; }
+        .info-box { background: #111; padding: 20px; border-radius: 10px; margin: 20px auto; text-align: left; border-left: 4px solid #ff5e00; }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: none; box-sizing: border-box; }
+        button { background: #25d366; color: #fff; padding: 12px; border: none; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#about">ABOUT</a>
+        <a href="#crew">CREW</a>
+        <a href="#videos">VIDEOS</a>
+        <a href="#book">BOOKING</a>
+    </nav>
+
+<div class="container">
+    <img src="https://i.ibb.co/4wncVGdq/IMG-20260530-WA0042.jpg" alt="Logo" class="logo">
+    <h1>RATTY ENTERTAINMENT</h1>
+    <p class="bio-text">"Seriousness is the best"</p>
+    
+    <a href="https://youtube.com/@comedianratty1?si=V9VU2n94kbfGBL7O" target="_blank" class="btn btn-yt">SUBSCRIBE ON YOUTUBE</a>
+    
+    <a href="intent://send?payee=7072539979#Intent;scheme=upi;package=com.opay.pay;end" 
+       class="btn btn-support" 
+       onclick="if(!navigator.userAgent.match(/Android/i)) { alert('Ratty Entertainment says: Copy account number 7072539979'); }">
+       SUPPORT THE TEAM
+    </a>
+
+    <div id="about" class="info-box">
+        <h2 style="text-align: center; color: #ff5e00;">ABOUT US</h2>
+        <p><strong>CEO:</strong> Saviour Odey Agbor (Ratty). Building a powerhouse of creativity since age 12.</p>
+        <p><strong>Our Story:</strong> Officially established on 3rd April 2026. From content creation to film, we turn everyday life into unfiltered joy.</p>
+    </div>
+
+    <h2 id="crew">THE CREW</h2>
+    <div class="grid">
+        <div class="card"><img src="https://i.ibb.co/zTPMJpDn/IMG-20260529-WA0070.jpg" alt="Ratty"><h3>Ratty</h3><p style="color:#ff5e00; font-size: 0.8rem; font-weight:bold;">CEO & Founder</p></div>
+        <div class="card"><img src="https://i.ibb.co/k2g8VvwJ/file-000000004db871fdb9db107f1656a8e2.png" alt="Goodnews"><h3>Goodnews</h3></div>
+        <div class="card"><img src="https://i.ibb.co/4gFpxnBw/file-00000000e560724389515f01b597ebf0.png" alt="Owoshop"><h3>Owoshop</h3></div>
+        <div class="card"><img src="https://i.ibb.co/NdDc9XmS/IMG-20260529-WA0089.jpg" alt="She's Crazy"><h3>She's Crazy</h3></div>
+        <div class="card"><img src="https://i.ibb.co/KcWZGR2Y/IMG-20260529-WA0091.jpg" alt="Bentem"><h3>Bentem</h3></div>
+        <div class="card"><img src="https://i.ibb.co/JjqyM7gj/IMG-20260530-WA0045.jpg" alt="Borah"><h3>Borah</h3></div>
+        <div class="card"><img src="https://i.ibb.co/svrm8dfQ/IMG-20260530-WA0046.jpg" alt="Itzopiro"><h3>Itzopiro</h3></div>
+        <div class="card"><img src="https://i.ibb.co/KR8PKyw/IMG-20260530-WA0048.jpg" alt="Auztin Yoda"><h3>Auztin Yoda</h3></div>
+        <div class="card"><img src="https://i.ibb.co/LztFZTqS/IMG-20260530-WA0050.jpg" alt="Blaqreinny"><h3>Blaqreinny</h3></div>
+        <div class="card"><img src="https://i.ibb.co/HTKTKbrh/IMG-20260530-WA0052.jpg" alt="Queen Bella"><h3>Queen Bella</h3></div>
+        <div class="card"><img src="https://i.ibb.co/Xkx70d3j/IMG-20260530-WA0055.jpg" alt="Deborah"><h3>Deborah</h3></div>
+        <div class="card"><img src="https://i.ibb.co/WN4vJ35B/IMG-20260530-WA0056.jpg" alt="Dami devil"><h3>Dami devil</h3></div>
+        <div class="card"><img src="https://i.ibb.co/Gfdy4MxK/IMG-20260530-WA0057.jpg" alt="Ocean Berry"><h3>Ocean Berry</h3></div>
+        <div class="card"><img src="https://i.ibb.co/XfhhMxw3/IMG-20260530-WA0058.jpg" alt="Betty"><h3>Betty</h3></div>
+        <div class="card"><img src="https://i.ibb.co/LD1465B8/IMG-20260530-WA0059.jpg" alt="Next of kin"><h3>Next of kin</h3></div>
+    </div>
+
+    <h2 id="videos">LATEST VIDEOS</h2>
+    <iframe class="vid" src="https://streamable.com/e/1t8g7y"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/nvoaj9"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/m8wdqm"></iframe>
+    <iframe class="vid" src="https://streamable.com/e/lxfa9e"></iframe>
+
+    <h2 id="book">BOOK US</h2>
+    <form id="f">
+        <input type="text" id="n" placeholder="Your Name" required>
+        <input type="text" id="t" placeholder="Event Type" required>
+        <textarea id="m" placeholder="Write your message to the CEO here..." rows="4" required></textarea>
+        <button type="submit">SEND TO CEO</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('f').onsubmit = function(e) {
+        e.preventDefault();
+        const n = document.getElementById('n').value;
+        const t = document.getElementById('t').value;
+        const m = document.getElementById('m').value;
+        const fullMessage = `Booking request from ${n}. Event: ${t}. Message: ${m}`;
+        window.open(`https://wa.me/2347072539979?text=${encodeURIComponent(fullMessage)}`);
+    };
+</script>
+</body>
+</html>
