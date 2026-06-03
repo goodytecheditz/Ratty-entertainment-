@@ -65,11 +65,12 @@
     <iframe class="vid" src="https://streamable.com/e/lxfa9e" loading="lazy"></iframe>
 
     <h2 id="book">BOOK US</h2>
-<form id="booking-form" style="display: flex; flex-direction: column; gap: 10px;">
-    <input type="text" id="clientName" placeholder="Your Name" required>
-    <input type="text" id="eventType" placeholder="Event Type" required>
-    <textarea id="message" placeholder="Details about your event..." rows="4" required></textarea>
-    <button type="button" onclick="sendToWhatsApp()" style="background: #25d366; color: white; padding: 12px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+<!-- The ID="f" is crucial for the script to find this form -->
+<form id="f" style="display: flex; flex-direction: column; gap: 10px; padding: 20px;">
+    <input type="text" id="clientName" placeholder="Your Name" required style="padding: 10px;">
+    <input type="text" id="eventType" placeholder="Event Type" required style="padding: 10px;">
+    <textarea id="message" placeholder="Details about your event..." rows="4" required style="padding: 10px;"></textarea>
+    <button type="button" onclick="sendToWhatsApp()" style="background: #25d366; color: white; padding: 15px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
         SEND TO CEO ON WHATSAPP
     </button>
 </form>
