@@ -65,13 +65,14 @@
     <iframe class="vid" src="https://streamable.com/e/lxfa9e" loading="lazy"></iframe>
 
     <h2 id="book">BOOK US</h2>
-    <form id="f">
-        <input type="text" id="n" placeholder="Name" required>
-        <input type="text" id="t" placeholder="Event Type" required>
-        <textarea id="m" placeholder="Write your message to the CEO..." rows="4" required></textarea>
-        <button type="submit">SEND TO CEO</button>
-    </form>
-</div>
+<form id="booking-form" style="display: flex; flex-direction: column; gap: 10px;">
+    <input type="text" id="clientName" placeholder="Your Name" required>
+    <input type="text" id="eventType" placeholder="Event Type" required>
+    <textarea id="message" placeholder="Details about your event..." rows="4" required></textarea>
+    <button type="button" onclick="sendToWhatsApp()" style="background: #25d366; color: white; padding: 12px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+        SEND TO CEO ON WHATSAPP
+    </button>
+</form>
 
 <!-- Linking the external JS file -->
 <script src="script.js"></script>
